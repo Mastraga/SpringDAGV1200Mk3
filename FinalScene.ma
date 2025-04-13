@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: FinalScene.ma
-//Last modified: Sun, Apr 13, 2025 10:11:34 AM
+//Last modified: Sun, Apr 13, 2025 10:15:41 AM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "sweepMeshCreator" -dataType "sweepMeshData" -dataType "sweepProfileData"
@@ -16,13 +16,13 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "3F61D820-4603-203B-1875-699DEE7ACC48";
+fileInfo "UUID" "C2405F3D-4A2E-9FE4-EAD1-CAA424D20C53";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "E5AC1A5D-483A-4B54-DE44-3A8D584241ED";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -4.8120748711439196 8.8168740752569796 -14.828541243276842 ;
-	setAttr ".r" -type "double3" 1057.4616472436946 -2320.1999999915483 359.99999999998153 ;
+	setAttr ".t" -type "double3" -7.5448335284774011 11.419897770957878 -11.916864906149197 ;
+	setAttr ".r" -type "double3" 1048.4616472436967 -2306.9999999915435 359.9999999999784 ;
 	setAttr ".rp" -type "double3" 1.7763568394002505e-15 -1.7763568394002505e-15 -1.4210854715202004e-14 ;
 	setAttr ".rpt" -type "double3" 1.139034642866033e-14 -1.8489668629703752e-15 1.8874997946516795e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -34363,7 +34363,7 @@ createNode mesh -n "ChairBottomPadShape" -p "ChairBottomPad";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 13 ".pt";
+	setAttr -s 8 ".pt";
 	setAttr ".pt[0]" -type "float3" 3.7252903e-09 -1.8626451e-09 0 ;
 	setAttr ".pt[1]" -type "float3" 1.1175871e-08 -1.8626451e-09 1.1175871e-08 ;
 	setAttr ".pt[6]" -type "float3" 3.7252903e-09 -1.8626451e-09 -7.4505806e-09 ;
@@ -42065,20 +42065,20 @@ createNode aiAreaLight -n "UnderDeskLightShape" -p "UnderDeskLight";
 	setAttr ".ai_translator" -type "string" "quad";
 	setAttr ".aal" -type "attributeAlias" 4 "exposure" "aiExposure" "normalize" "aiNormalize" ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "1F1FE61D-4A0B-F6B0-736E-45BF7C212021";
+	rename -uid "C646A9B7-43EA-588E-84BF-D88479E44A43";
 	setAttr -s 25 ".lnk";
 	setAttr -s 25 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8AF78085-4F0F-0B90-6051-2094D1BDB592";
+	rename -uid "4719EA8D-4334-89A4-7795-26B8BC6CE3DB";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "C52BBBE5-46C2-C505-05EC-AEA5DD98E7A7";
+	rename -uid "6191B29C-4F38-9CA3-D372-F4887CA21EF2";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "82270A4F-4096-FBBF-91C6-9092F11CB50D";
+	rename -uid "25AC8D5C-4744-86EB-3882-4DAF4F8B2448";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "72205A28-4981-73B0-4041-66AB55665C77";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "44EEC812-4712-E50F-C9A3-A7AF1C55AB2A";
+	rename -uid "BCE681D2-4E2F-280A-C5FC-1BAE9E8ADFE5";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "CCB17776-4C3A-3CD3-9152-4E821101786D";
 	setAttr ".g" yes;
@@ -48288,7 +48288,6 @@ createNode place2dTexture -n "place2dTexture32";
 createNode bump2d -n "bump2d8";
 	rename -uid "4303ABBC-4225-53E2-A01A-8BAD1F95DF8E";
 	setAttr ".bi" 1;
-	setAttr ".vc1" -type "float3" 0 9.9999997e-06 0 ;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
 createNode blinn -n "Lamp";
 	rename -uid "D74EC0C8-41C2-12A4-4B53-45A995A1B018";
